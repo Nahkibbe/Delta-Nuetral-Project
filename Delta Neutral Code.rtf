@@ -17,16 +17,6 @@
 \cf4 div = \cf6 0\
 \
 \
-\cf5 # Find the Risk-Free-Rate\
-    # STEP 1: TimeToExpiration = Subtract the data date from the expiration date\
-        # FOR EACH ROW OF DATA\
-        # ADD TO BASE PROGRAM/TABLE\
-    # STEP 2: AvgTTE Find the average TimeToExpiration\
-        # Weighted Average of every TTE in the specific calculation for each ticker.\
-        # MAKE SURE IT IS FOR THAT SPECIFIC TICKER\
-    # STEP 3: Find the closest AvgTTE to the risk free rate given on Treasury.gov\
-        # Find out how to only pull info from Treasury.gov for one time after the average Time to Expiration is found\
-        # DON'T ACCIDENTALLY DDOS TREASURY.GOV!!!!\
 \
 # Set Pandas display options\
 \cf4 pd.set_option(\cf7 'display.max_columns'\cf4 , \cf2 None\cf4 )  \cf5 # Show all columns\
